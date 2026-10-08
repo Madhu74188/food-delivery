@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">🍔 Foodie</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#menu">Menu</a>
+            <a href="#cart">Cart 🛒 <span id="cart-count">0</span></a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Delicious Food, Delivered Fast</h1>
+            <p>Order your favorite food from your favorite restaurant.</p>
+            <a href="#restaurants" class="btn">Order Now</a>
+        </div>
+    </section>
+
+
+    
+    <section class="section" id="restaurants">
+        <h2>Popular Restaurants</h2>
+
+        <div class="restaurant-container">
+
+            <div class="restaurant-card">
+                <div class="restaurant-image">🍕</div>
+                <h3>Pizza Palace</h3>
+                <p>Italian • Pizza • Fast Food</p>
+                <p>⭐ 4.5</p>
+                <button onclick="showMenu('pizza')">
+                    View Menu
+                </button>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image">🍛</div>
+                <h3>Spice Kitchen</h3>
+                <p>Indian • Biryani • Meals</p>
+                <p>⭐ 4.7</p>
+                <button onclick="showMenu('indian')">
+                    View Menu
+                </button>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image">🍔</div>
+                <h3>Burger House</h3>
+                <p>Burgers • Fries • Beverages</p>
+                <p>⭐ 4.3</p>
+                <button onclick="showMenu('burger')">
+                    View Menu
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+   
+    <section class="section menu-section" id="menu">
+
+        <h2 id="restaurant-name">Select a Restaurant</h2>
+
+        <div id="menu-container">
+            <p class="menu-message">
+                Select a restaurant to see its menu.
+            </p>
+        </div>
+
+    </section>
+
+
+    
+    <section class="section cart-section" id="cart">
+
+        <h2>Your Cart 🛒</h2>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+
+            <button class="checkout-btn" onclick="checkout()">
+                Place Order
+            </button>
+        </div>
+
+    </section>
+
+
+    
+    <footer>
+        <p>© 2026 Foodie. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
